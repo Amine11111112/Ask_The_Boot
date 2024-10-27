@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask The Boot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- واجهة تسجيل الدخول -->
+    <div id="login-page" class="login-container">
+        <h1>Ask The Boot</h1>
+        <form id="login-form">
+            <input type="text" placeholder="Nom d'utilisateur" id="username" required>
+            <input type="password" placeholder="Mot de passe" id="password" required>
+            <button type="submit">Se connecter</button>
+        </form>
+    </div>
+
+    <!-- واجهة الدردشة -->
+    <div id="chat-page" class="chat-container" style="display: none;">
+        <div class="chat-header">
+            <h1>Chat Which The Boot</h1>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="message from-bot">
+                <p>Hi I am the bot how can I help you?</p>
+            </div>
+        </div>
+        <div class="message-input">
+            <input type="text" id="message-input" placeholder="Écrivez votre message...">
+            <button id="send-button">Envoyer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
